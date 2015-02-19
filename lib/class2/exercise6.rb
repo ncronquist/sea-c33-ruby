@@ -9,3 +9,9 @@
 #   CAN'T YOU SEE I'M BUSY?! MAKE IT FAST, JOHNSON!
 #   i want a raise
 #   WHADDAYA MEAN 'I WANT A RAISE'?!? YOU'RE FIRED!!
+
+# Yell at the user and ask for ask for input
+puts "CAN'T YOU SEE I'M BUSY?! MAKE IT FAST, JOHNSON!"
+user_answer = gets.chomp
+
+puts "WHADDAYA MEAN '" + user_answer.upcase + "'?!? YOU'RE FIRED!!"
