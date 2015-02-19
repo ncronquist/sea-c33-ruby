@@ -6,5 +6,5 @@
 # 1,160,000,000 seconds / 60 seconds/min / 60 min/hour / 24 hours/day / _
 # 365 days/year
 
-years = 1160000000 / 60 / 60 / 24 / 365
+years = 1_160_000_000 / 60 / 60 / 24 / 365
 puts years
