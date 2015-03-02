@@ -28,7 +28,25 @@
 
 # rubocop:disable MethodLength
 def old_school_roman_numeral(num)
-  num # change me
+  roman = ''
+
+  map = { 1000 => 'M',
+          500 => 'D',
+          100 => 'C',
+          50 => 'L',
+          10 => 'X',
+          5 => 'V',
+          1 => 'I' }
+
+  map.each do |a, r|
+    result = num / a
+    result.times do
+      roman += r
+    end
+    num = num % a
+  end
+
+  roman
 end
 
 input = ARGV[0].to_i
