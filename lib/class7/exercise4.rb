@@ -35,8 +35,8 @@ class OrangeTree
     @fruit
   end
 
-  def pick!(num = 1)
-    @fruit -= num if @fruit >= num
+  def pick!(amount = 1)
+    @fruit -= amount if @fruit >= amount
   end
 
   def ==(other)
