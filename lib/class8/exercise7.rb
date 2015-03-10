@@ -22,6 +22,22 @@
 
 class Array
   def each_without_yolo(&block)
-    block # fix me
+    # block # fix me
+    # if self.downcase == 'yolo'
+    #   puts 'Life is too short'
+    # else
+    #   puts self
+    # end
+    new_array = self
+    new_array.each do |e|
+      yolos = 'Life is too short'
+      if e.downcase == 'yolo'
+        block.call(yolos)
+      else
+        block.call(e)
+      end
+    end
   end
 end
+
+%w(OMG YOLO ROTFL yolo FTW).each_without_yolo { |e| puts e }

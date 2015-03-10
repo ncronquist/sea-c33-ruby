@@ -15,7 +15,8 @@
 #   GONGGG!
 
 def grandfather_clock(hour, sound, &block)
-  hour && sound && block # fix me
+  # hour && sound && block # fix me
+  hour.times { block.call(sound) }
 end
 
 input1 = ARGV[0]
