@@ -43,12 +43,3 @@ class OrangeTree
     @fruit == other.fruit
   end
 end
-
-orange_tree = OrangeTree.new
-puts orange_tree.fruit  # => 50
-
-orange_tree = OrangeTree.new(20)
-puts orange_tree.fruit  # => 20
-
-puts OrangeTree.new(20) == OrangeTree.new(20) # => true
-puts OrangeTree.new(20) != OrangeTree.new(10) # => true

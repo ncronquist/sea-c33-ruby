@@ -57,19 +57,3 @@ class OrangeTree
     @fruit == other.fruit
   end
 end
-
-orange_tree = OrangeTree.new
-puts orange_tree.fruit     # => 50
-
-returned_orange_tree = orange_tree.pick      # => OrangeTree.new(49)
-puts returned_orange_tree.fruit # => 49
-puts orange_tree.fruit     # => 50
-
-puts orange_tree.pick(49)  # => OrangeTree.new(1)
-puts orange_tree.fruit     # => 50
-
-puts orange_tree.pick(50)  # => OrangeTree.new(0)
-puts orange_tree.fruit     # => 50
-
-puts orange_tree.pick(51)  # => nil
-puts orange_tree.fruit     # => 50

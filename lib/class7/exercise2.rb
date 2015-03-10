@@ -25,6 +25,3 @@ class OrangeTree
     @fruit
   end
 end
-
-orange_tree = OrangeTree.new
-puts orange_tree.fruit

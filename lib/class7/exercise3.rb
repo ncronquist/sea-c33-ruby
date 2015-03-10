@@ -36,15 +36,3 @@ class OrangeTree
     @fruit -= amount if @fruit >= amount
   end
 end
-
-orange_tree = OrangeTree.new
-puts orange_tree.fruit      # => 50
-
-puts orange_tree.pick!      # => 49
-puts orange_tree.fruit      # => 49
-
-puts orange_tree.pick!(5)   # => 44
-puts orange_tree.fruit      # => 44
-
-puts orange_tree.pick!(50)  # => nil
-puts orange_tree.fruit      # => 44

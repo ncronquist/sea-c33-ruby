@@ -103,7 +103,3 @@ class Array
     self[2]
   end
 end
-
-puts 'foo'.indent
-
-puts [1, 2, 3, 4].third
